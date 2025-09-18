@@ -1,0 +1,384 @@
+<html><head><base href="https://www.helenpaul.net" />
+  <title>Helen Paul</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  
+<style>
+  /* ========== Base ========== */
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  /* ========== Table scaffold ========== */
+  .main-table {
+    width: 100%;
+    max-width: 1900px;
+    height: 100vh;
+    border-collapse: collapse;
+    table-layout: fixed;
+    margin: 0;
+    padding: 0;
+  }
+  .main-table td {
+    border: 1px solid #333;
+    vertical-align: top;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* ========== Row 1: Header ========== */
+  .main-table tr:nth-child(1) {
+    height: 80px !important;
+    background-color: #29221fff;
+  }
+  .main-table tr:nth-child(1) td {
+    color: white;
+    font-weight: 800;
+    text-align: center;
+    padding: 80px 30px 20px 20px;
+    font-size: 18px;
+  }
+
+  /* Header nested container */
+  .header-nested {
+    background-color: #29221fff;
+    width: 100%;
+    margin: 0 auto;
+    border: 0px solid #404040 !important;
+    border-radius: 0px;
+    padding: 0px 20px !important;
+  }
+  .header-nested td {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px !important;
+  }
+  .header-nested div {
+    flex: 1;
+    padding: 0 10px;
+  }
+  .header-nested a {
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  /* ========== Row 2: Intro band ========== */
+  .main-table tr:nth-child(2) {
+    height: 150px !important;
+    background-color: #29221fff;
+  }
+
+  /* ========== Row 3: Image | Text (Mission) ========== */
+  .main-table tr:nth-child(3) {
+    height: 150px !important;
+    background-color: #312824ff;
+  }
+  .main-table tr:nth-child(3) td {
+    color: #ffffff;
+    font-weight: 200;
+    text-align: left;
+    padding: 200px 40px 200px 80px;
+    font-size: 20px;
+  }
+
+  /* ========== Row 4: Text | Image (Subscription) ========== */
+  .main-table tr:nth-child(4) {
+    height: auto !important;
+    min-height: 150px;
+    background-color: #203715ff;
+  }
+  .main-table tr:nth-child(4) td {
+    padding: 100px 40px 120px 80px;
+    vertical-align: top;
+  }
+
+  /* ========== Row 5: Text box (Advice) ========== */
+  .main-table tr:nth-child(5) {
+    height: 150px !important;
+    background-color: #29221fff;
+  }
+  .main-table tr:nth-child(5) td {
+    color: white;
+    font-weight: 200;
+    text-align: center;
+    padding: 60px 40px 60px 40px;
+    font-size: 26px;
+  }
+
+  /* ========== Row 6: Footer/contact band ========== */
+  .main-table tr:nth-child(6) {
+    /*height: 100%; */
+    background-color: #312824ff;
+  }
+  .main-table tr:nth-child(6) td {
+    color: white;
+    font-weight: 200;
+    text-align: center;
+    padding: 20px 80px 20px 80px;
+    font-size: 12px;
+  }
+  
+  /* ========== Row 7: Footer/contact band ========== */
+  .main-table tr:nth-child(7) {
+    /*height: 100%; */
+    background-color: #312824ff;
+  }
+  .main-table tr:nth-child(7) td {
+    color: white;
+    font-weight: 200;
+    text-align: center;
+    padding: 20px 80px 20px 80px;
+    font-size: 12px;
+  }
+
+  /* ========== Split columns ========== */
+  .split-left, .split-right {
+    width: 50%;
+    box-sizing: border-box;
+  }
+
+  /* ========== Image fill behavior ========== */
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* ========== Mobile ========== */
+  @media screen and (max-width: 768px) {
+    .main-table,
+    .main-table tbody,
+    .main-table tr,
+    .main-table td {
+      display: block;
+      width: 100% !important;
+      height: auto;
+    }
+    .main-table td { margin: 0; }
+  }
+</style>
+</head>
+
+<body>
+  <table class="main-table">
+    <tr>
+      <td colspan="2">
+        <table style="width: 100%; border-collapse: collapse; border: none;">
+          <tr>
+            <td class="header-nested" style="display: flex; justify-content: space-between; align-items: center;">
+              <div style="flex: 1; text-align: center;"><h1>Helen Paul</h1></div>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+     <tr>
+      <td colspan="2">
+        <table
+          style="height: 100%; margin: 0 auto; background: #29221fff; border-collapse: collapse; border: none;">
+          <tr>
+            <td
+              style="font-weight: 300; text-align: center; padding: 25px 25px 25px 25px; font-size: 28px; background: #29221fff; border: none;">
+              <p>VFX Digital Lighting Artist</p>
+              <p>Acrylic Painter</p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td class="split-left">
+        <img src="https://chlocka.github.io/helenpaul/background01.jpg"  alt="Cover Image 1">
+      </td>
+      <td class="split-right">Worsd<br><br>
+      Words      </td>
+    </tr><tr>
+      <td class="split-left">
+        <div class="Subscription">
+          <h3>Big words</h3>
+
+          <ul>
+            <li>words</li>
+            <li>words</li>
+          </ul><br>
+          <p> <h3>Heading</h3>
+            <B>words</p>
+        </div>
+      </td>
+      <td class="split-right">
+        <img src="https://biketecnz.github.io/web/Biketec_Website_Cover_Image2.jpg" alt="Cover Image 2">
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <table
+          style="width: 900px; height: 100%; margin: 0 auto; background: #29221fff; border-collapse: collapse; border: none;">
+          <tr>
+            <td
+              style="font-weight: 300; text-align: left; padding: 25px 25px 25px 65px; font-size: 20px; background: #203715ff; border: none;">
+              words
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  <tr>
+      <td colspan="2">
+        <table
+          style="/*width: 1200px;*/ height: 100%; margin: 80px auto; background: #312824ff; border-collapse: collapse; border: none;">
+          <tr>
+            <td
+              style="width: 50%; font-weight: 400; text-align: center; padding: 25px; font-size: 12px; background: white; border: none;">
+              <h2 style="color: #203715ff; font-size: 32px; margin-bottom: 15px;">Want to know more?<br>Get in Touch
+              </h2>
+              <p style="color: #203715ff; font-size: 24px; margin-bottom: 30px;">021 746642</p>
+
+              <!-- Add EmailJS scripts -->
+              <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+              </script>
+              <script type="text/javascript">
+                (function() {
+                  emailjs.init({
+                    publicKey: "eS1lECw2cL7yaaYvC",
+                  });
+                })();
+              </script>
+              <script type="text/javascript">
+                window.onload = function() {
+                  document.getElementById('contact-form').addEventListener('submit', function(event) {
+                    event.preventDefault();
+                    
+                    // First validate email
+                    const email = document.getElementById('user_email').value;
+                    if (!email.includes('@')) {
+                      alert('Please enter a valid email address with @ symbol');
+                      return false;
+                    }
+
+                    // Show loading state
+                    const submitButton = this.querySelector('button[type="submit"]');
+                    const originalButtonText = submitButton.innerHTML;
+                    submitButton.innerHTML = 'Sending...';
+                    submitButton.disabled = true;
+
+                    // Send email using EmailJS
+                    emailjs.sendForm('service_ykda5qg', 'template_4cimntf', this)
+                      .then(() => {
+                        // Success
+                        alert('Thank you for your message, we\'ll be in touch soon');
+                        this.reset(); // Clear the form
+                      })
+                      .catch((error) => {
+                        // Error
+                        console.error('EmailJS Error:', error);
+                        alert('Failed to send message. Please try again.');
+                      })
+                      .finally(() => {
+                        // Reset button state
+                        submitButton.innerHTML = originalButtonText;
+                        submitButton.disabled = false;
+                      });
+                  });
+                }
+              </script>
+
+              <form id="contact-form" style="max-width: 400px; margin: 0 auto;">
+                <input type="hidden" name="contact_number" value="697483">
+
+                <div style="margin-bottom: 20px;">
+                  <input type="text"
+                         id="user_name"
+                         name="user_name"
+                         placeholder="Your name"
+                         required
+                         style="width: 100%; 
+                                padding: 8px; 
+                                border: none;
+                                border-bottom: 1px solid #d0ac68ff; 
+                                background: rgba(255,255,255,0.9);
+                                font-family: inherit;
+                                font-size: inherit;">
+                </div>
+
+                <div style="margin-bottom: 20px;">
+                  <input type="text"
+                         id="user_email"
+                         name="user_email"
+                         placeholder="Your email address"
+                         pattern="[^@\s]+@[^@\s]+"
+                         title="Must be an email address"
+                         required
+                         style="width: 100%; 
+                                padding: 8px; 
+                                border: none;
+                                border-bottom: 1px solid #d0ac68ff; 
+                                background: rgba(255,255,255,0.9);
+                                font-family: inherit;
+                                font-size: inherit;">
+                </div>
+
+                <div style="margin-bottom: 20px;">
+                  <label for="message" style="display: block; color: #777675ff; margin-bottom: 5px; font-size: 13px; text-align: left; padding: 0px 0px 0px 11px; font-family: Arial;">Your message</label>
+                  <textarea id="message"
+                            name="message"
+                            required
+                            style="width: 100%; 
+                                   height: 120px; 
+                                   padding: 8px; 
+                                   border: none;
+                                   border-bottom: 1px solid #d0ac68ff; 
+                                   background: rgba(255,255,255,0.9);
+                                   font-family: inherit;
+                                   font-size: inherit;"></textarea>
+                </div>
+
+                <button type="submit" style="width: 100%; 
+                            background: #312824ff;  
+                            color: white; 
+                            border: 1px solid #312824ff; 
+                            padding: 12px; 
+                            border-radius: 0px; 
+                            cursor: pointer; 
+                            font-size: 16px; 
+                            font-weight: 600;
+                            transition: all 0.3s ease;">Send Message</button>
+              </form>
+            </td>
+            <td
+              style="width: 50%; font-weight: 400; text-align: left; padding: 0; font-size: 20px; background: white; border: none; position: relative;">
+              <img src="xx" alt="Helen" style="width: 100%; height: 100%; object-fit: cover; /*position: absolute;*/ top: 0; left: 0;">
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="2">
+              &copy; 2025 Helen Paul.
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
